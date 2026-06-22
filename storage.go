@@ -7,7 +7,6 @@ import (
 	"path/filepath"
 
 	"github.com/togo-framework/togo"
-	tstorage "github.com/togo-framework/togo/storage"
 )
 
 func init() {
@@ -20,7 +19,7 @@ func init() {
 type fsStore struct{ root string }
 
 // NewFS returns a filesystem-backed store rooted at root.
-func NewFS(root string) tstorage.Storage { return &fsStore{root: root} }
+func NewFS(root string) togo.Storage { return &fsStore{root: root} }
 
 func (s *fsStore) full(p string) string { return filepath.Join(s.root, filepath.Clean("/"+p)) }
 
