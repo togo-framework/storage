@@ -1,6 +1,6 @@
 # storage — documentation
 
-  <img src=".github/assets/togo-mark.svg" alt="togo" height="64" />
+togo storage provider plugin
 
 ## Overview
 
@@ -17,7 +17,7 @@ Set `STORAGE_DRIVER=<provider>` and install a driver (storage-s3, storage-r2, �
 
 ## Configuration
 
-Environment variables read by this plugin (extracted from the source):
+Environment variables read by this plugin (extracted from the source — see the gateway/provider docs for each value):
 
 _No environment variables read directly (uses the kernel/base config or the app DB)._
 
@@ -34,4 +34,4 @@ url := st.Path("path/file.txt")
 
 - Marketplace: https://to-go.dev/marketplace
 - Source: https://github.com/togo-framework/storage
-- README: ../README.md
+- Full README: ../README.md
